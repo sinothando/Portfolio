@@ -1,0 +1,285 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #4dc3ff, #a3e0ff);
+    color: black;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 5%;
+    background: #a3e0ff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center items */
+    gap: 20px; /* Space between items */
+  }
+  
+  /* Ensure each nav item is equal size */
+  .navbar ul li {
+    flex: 1; /* Equal width */
+    text-align: center;
+  }
+  
+  /* Style the links */
+  .navbar ul li a {
+    color: #5a68e0;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+  
+  /* Fix hidden buttons issue */
+  .navbar ul li a:hover {
+    background-color: #4dc3ff;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column; /* Stack items on small screens */
+    }
+  }
+
+  .cv-button {
+    background-color: gold;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cv-button:hover {
+    background-color: orange;
+}
+
+.theme-toggle {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    height: 80vh;
+}
+
+.container {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.highlight {
+    font-size: 40px;
+    color: #5a68e0;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    background: #4dc3ff;
+    color: #5a68e0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+/* Illustration Image */
+.image-container img {
+    width: 400px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    .image-container img {
+        width: 250px;
+        margin-top: 20px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    }
+    /* Typewriter Cursor Effect */
+
+.typewriter {
+    border-right: 2px solid black;
+    padding-right: 5px;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    color: #5a68e0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 80px; /* Increase icon size */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Icon Colors */
+
+.social-icons .instagram {
+    color: #C13584; /* Instagram Gradient */
+}
+
+.social-icons .linkedin {
+    color: #0077b5; /* LinkedIn Blue */
+}
+.social-icons .github {
+    color: #333; /* GitHub Dark Gray */
+}
+
+/* Hover Effect */
+.social-icons a:hover {
+    transform: scale(1.2); /* Slight zoom effect */
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(1.2); /* Lightens color on hover */
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+section {
+    height: 100vh; /* Each section takes full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+   
+}
+/* Myself Section */
+.about {
+    display: flex;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9; /* Light Background */
+    padding: 50px 10%;
+   
+}
+
+.about h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+
+.technologies {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.technologies h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tech-stack {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.tech-item {
+    width: 120px;
+    text-align: center;
+}
+
+.tech-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.tech-item p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+
+
+}

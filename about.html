@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4dc4ff36;
+    margin: 0;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 0 ;
+    background: #a3e0ff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix navbar at the top */
+    top: 0; /* Stick to the top */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.theme-toggle {
+    font-size: 20px;
+    cursor: pointer;
+}
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center items */
+  gap: 20px; /* Space between items */
+}
+
+/* Ensure each nav item is equal size */
+.navbar ul li {
+  flex: 1; /* Equal width */
+  text-align: center;
+}
+
+/* Style the links */
+.navbar ul li a {
+  color: #5a68e0;;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/* Fix hidden buttons issue */
+.navbar ul li a:hover {
+  background-color: #4dc3ff;
+}
+
+.nav-links a.active {
+  background-color: #ff8800; /* Highlight color */
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+
+
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column; /* Stack items on small screens */
+  }
+}
+
+.theme-toggle {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.about-section {
+    width: 70%;
+    gap: 20px;
+    background: rgba(128, 128, 128, 0.089);
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+ 
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    font-size: 24px;
+    color: #4dc3ff;
+    margin-top: 20px;
+}
+
+.about-content p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.tech-tools p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+h1{
+    color: #5a68e0;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #4dc4ff36;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 140px;
+}
+
+.tech-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.tech-item span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+        </style>
+</head>
+<body>
+
+    <section class="about-section">
+        <h1 class="title">A bit about Me</h1>
+
+        <div class="about-content">
+            <p> Hi, I'm Sinothando Masiki, a dedicated and ambitious AI Associate with a solid foundation in Software Engineering. 
+                I have a strong passion for building innovative applications, with a keen interest in AI-driven solutions. 
+                My expertise spans both front-end and full-stack web development, while also exploring how AI can enhance user experiences.
+                I am eager to apply my knowledge, learn from industry experts, and contribute to creating efficient, intelligent, and user-friendly applications.
+                I am a software engineer with a strong focus on AI and full-stack development. I thrive on solving complex problems and creating impactful digital experiences.</p>
+                <br>
+                    <p>Throughout my academic journey, I’ve had the opportunity to work on various projects that helped me develop my skills and gain practical experience. 
+                        While my experience has been primarily focused on school-based projects, I’ve had the chance to collaborate with peers from diverse backgrounds, 
+                        which has broadened my understanding of working in different team dynamics. These experiences have enhanced my ability to adapt and approach challenges with a fresh perspective, 
+                        and I’m excited to apply these skills to real-world projects in the future.</p>
+        </div>
+        <br>
+        <br>
+
+        <div class="tech-tools">
+            <h2 class="sub-title">Technologies and Tools</h2>
+            <p>Using a combination of cutting-edge technologies and reliable open-source software, I build user-focused, performant apps and websites for smartphones, tablets, and desktops.</p>
+
+            <div class="tech-list">
+                <div class="tech-item">
+                    <img src="html.jfif" alt="C Language">
+                    <span>HTML</span>
+                </div>
+                <div class="tech-item">
+                    <img src="css.jfif" alt="TypeScript">
+                    <span>CSS</span>
+                </div>
+                <div class="tech-item">
+                    <img src="node.png" alt="Express">
+                    <span>NodeJS</span>
+                </div>
+                <div class="tech-item">
+                    <img src="post.png" alt="NodeJS">
+                    <span>Postman</span>
+                </div>
+                <div class="tech-item">
+                    <img src="js.png" alt="Postman">
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                    <img src="mysql.png" alt="Dart">
+                    <span>MySQL</span>
+                </div>
+                <div class="tech-item">
+                    <img src="git.jfif" alt="Flutter">
+                    <span>Git</span>
+                </div>
+                <div class="tech-item">
+                    <img src="vue.png" alt="React Native">
+                    <span>VueJS</span>
+                </div>
+                <div class="tech-item">
+                    <img src="python.png" alt="HTML">
+                    <span>Python</span>
+                </div>
+                <div class="tech-item">
+                    <img src="java.png" alt="CSS">
+                    <span>Java</span>
+                </div>
+                <div class="tech-item">
+                    <img src="junit.jfif" alt="CSS">
+                    <span>JUnit</span>
+                </div>
+                <div class="tech-item">
+                    <img src="spring.jfif" alt="CSS">
+                    <span>Spring Boot</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+</body>
+</html>
