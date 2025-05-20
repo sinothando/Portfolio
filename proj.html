@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+   
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4dc4ff36;
+    margin: 0;
+    padding-top: 60px;
+    display: flex;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 0;
+    background: #a3e0ff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix navbar at the top */
+    top: 0; /* Stick to the top */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center items */
+  gap: 20px; /* Space between items */
+}
+
+/* Ensure each nav item is equal size */
+.navbar ul li {
+  flex: 1; /* Equal width */
+  text-align: center;
+}
+
+/* Style the links */
+.navbar ul li a {
+  color: #5a68e0;;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/* Fix hidden buttons issue */
+.navbar ul li a:hover {
+  background-color: #4dc3ff;
+}
+
+.navbar ul li a.active {
+  background-color: #ff8800; /* Highlight color */
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column; /* Stack items on small screens */
+  }
+}
+
+
+.projects {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+h1{
+    color: #5a68e0;
+}
+
+.projects h2 {
+    color: #5a68e0;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr; /* Ensures all rows have equal height */
+    gap: 20px;
+    align-items: stretch; /* Ensures all cards have equal height */
+}
+
+.project-card {
+    display: flex;
+    background: #4dc4ff36;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes content evenly */
+    height: 100%; /* Makes all cards equal height */
+
+   
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 16px;
+    flex-grow: 1; /* Ensures content fills the card evenly */
+}
+
+.project-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5a68e0;
+}
+
+.project-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+.tech-stack{
+    color: rgba(218, 20, 218, 0.685);
+
+}
+
+.read-more:hover {
+    background-color: #0037e0;
+}
+</style>
+
+<body>
+
+    <section class="projects">
+        <h1>Featured Projects</h1>
+          <div class="projects-container">
+           
+            <div class="project-card">
+                <img src="hire.jpg" alt="Technology Acquisitions 2021">
+                <div class="project-content">
+                    <h3>Van Rental System</h3>
+                    <p>The website offers solution designed to manage the booking, scheduling, and tracking of vans for rental services. 
+                        It enables rental businesses to streamline operations, improve customer experience, 
+                        and optimize fleet management through an intuitive and efficient platform.</p>
+    
+                        <div class="tech-stack">
+                            Maven | Spring Boot | MySQL | JUnit | Vue.js
+                        </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="Inno.PNG" alt="Technology Acquisitions 2021">
+                <div class="project-content">
+                    <h3>Academic Enhancement System</h3>
+                    <p>The Academic Enhancement System is an innovative educational technology platform designed to introduce Information Technology (IT) 
+                        at the foundation phase level (primary school). It aims to enhance early learning experiences by integrating digital tools, interactive content,
+                         and personalized learning paths into the traditional curriculum.</p>
+                    
+                         <div class="tech-stack">
+                            HTML | CSS | Javascript | 
+                        </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="fit.png" alt="Technology Acquisitions 2021">
+                <div class="project-content">
+                    <h3>Fitness Website</h3>
+                    <p>A comprehensive fitness and wellness platform designed to provide users with a user-friendly interface for managing their fitness journey. 
+                        The app allows clients to search for workouts, create weekly exercise schedules, and plan a healthy diet, ensuring a holistic approach to health and well-being.</p>
+                    
+                        <div class="tech-stack">
+                            Java | MySQL | JUnit | Vue.js
+                       </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="bursary.jpg" alt="Technology Acquisitions 2021">
+                <div class="project-content">
+                    <h3>Bursary Management System</h3>
+                    <p>The Bursary Management System (BMS) is a comprehensive digital platform designed for CPUT to modernize and optimize the entire bursary application and fund management processes.
+                        By transitioning from a manual, paper-based system to an advanced digital solution, the BMS enhances transparency, streamlines operations, and enables data-driven decision-making in bursary fund allocation and distribution.</p>
+                    
+                        <div class="tech-stack">
+                            Maven | Spring Boot | MySQL | JUnit | Vue.js
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
