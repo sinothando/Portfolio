@@ -1,4 +1,4 @@
-const textArray = ["AI Associate", "Software Engineer"];
+const textArray = ["Software Engineer", "AI Intern"];
 let textIndex = 0;
 let charIndex = 0;
 const typeSpeed = 100; 
